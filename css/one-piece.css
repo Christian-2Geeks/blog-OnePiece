@@ -178,6 +178,41 @@ h2 {
   width: 100%;
 }
 
+.manga-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.manga {
+  background-color: #f4fbff;
+  width: 48%;
+  margin: 1%;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.manga figure {
+  width: 100%;
+  margin: 0;
+}
+
+.manga img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.manga-details {
+  background-color: white;
+  margin: 20px;
+  margin-top: -40px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
 .nakama {
   background-color: #4b77b5;
   display: flex;
