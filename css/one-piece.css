@@ -1,0 +1,147 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1 strong {
+  color: #cb0b2d;
+}
+
+h2 {
+  color: #d9002c;
+}
+
+.header {
+  height: 100px;
+  background-color: #d6002d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left span {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 2em 0;
+}
+
+.header .logo {
+  height: 90px;
+  margin: 0;
+}
+
+.header img {
+  height: 100%;
+}
+
+.menu {
+  height: inherit;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: inherit;
+}
+.menu ul li {
+  height: inherit;
+}
+
+.menu a {
+  height: inherit;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.hero {
+  background-color: #1b2127;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  height: 250px;
+  width: 435px;
+  object-fit: cover;
+}
+
+.anime {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anime-detail {
+  width: 50%;
+}
+
+.anime-title {
+  margin: 0 0 25px;
+  font-size: 30px;
+}
+
+.anime-url {
+  font-size: 18px;
+}
+
+.anime-url a {
+  text-decoration: none;
+  color: #d9002c;
+  font-weight: 700;
+}
+
+.anime-imgContainer {
+  width: 50%;
+  margin: 0;
+}
+
+.anime-image {
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  flex: 1;
+  margin: 0 auto;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+}
