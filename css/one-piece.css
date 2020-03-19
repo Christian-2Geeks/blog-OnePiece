@@ -217,6 +217,15 @@ h2 {
   text-align: left;
 }
 
+.manga-url {
+  text-decoration: none;
+  color: #026fff;
+  border: 1px solid;
+  padding: 5px 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
 .nakama {
   background-color: #4b77b5;
   display: flex;
