@@ -218,6 +218,29 @@ h2 {
   margin: 0 10px;
 }
 
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer img {
+  vertical-align: middle;
+  height: 60px;
+}
+
+.footer a {
+  color: white;
+}
+
 .container {
   max-width: 1000px;
   flex: 1;
