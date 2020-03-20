@@ -72,62 +72,6 @@ h2 {
   color: #d9002c;
 }
 
-.header {
-  height: 100px;
-  background-color: #d6002d;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header .header-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-left span {
-  font-size: 18px;
-  font-weight: 700;
-  padding: 0 2em 0;
-}
-
-.header .logo {
-  height: 90px;
-  margin: 0;
-}
-
-.header img {
-  height: 100%;
-}
-
-.menu {
-  height: inherit;
-}
-
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  height: inherit;
-}
-.menu ul li {
-  height: inherit;
-}
-
-.menu a {
-  height: inherit;
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-}
-
 .hero {
   background-color: #1b2127;
   display: flex;
@@ -270,29 +214,6 @@ h2 {
   margin: 0 10px;
 }
 
-.footer {
-  background-color: #1b2127;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  padding: 10px 0;
-}
-
-.footer p {
-  margin: 0;
-}
-
-.footer img {
-  vertical-align: middle;
-  height: 60px;
-}
-
-.footer a {
-  color: white;
-}
-
 .container {
   max-width: 1000px;
   flex: 1;
@@ -302,4 +223,12 @@ h2 {
   justify-content: inherit;
   align-items: inherit;
   flex-wrap: inherit;
+}
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
 }
