@@ -72,6 +72,62 @@ h2 {
   color: #d9002c;
 }
 
+.header {
+  height: 90px;
+  background-color: #d6002d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-left span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.header .logo {
+  height: 90px;
+  margin: 0 2em 0 0;
+}
+
+.header img {
+  height: 100%;
+}
+
+.menu {
+  height: inherit;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  margin: 0;
+}
+
+.menu ul li {
+  height: inherit;
+  margin-left: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  height: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
 .hero {
   background-color: #1b2127;
   display: flex;
