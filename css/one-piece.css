@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?7ig8a2');
-  src:  url('../fonts/icomoon.eot?7ig8a2#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?7ig8a2') format('truetype'),
-    url('../fonts/icomoon.woff?7ig8a2') format('woff'),
-    url('../fonts/icomoon.svg?7ig8a2#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?7ig8a2");
+  src: url("../fonts/icomoon.eot?7ig8a2#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?7ig8a2") format("truetype"),
+    url("../fonts/icomoon.woff?7ig8a2") format("woff"),
+    url("../fonts/icomoon.svg?7ig8a2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   /* speak: none; */
   font-style: normal;
   font-weight: normal;
@@ -79,6 +80,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-left {
@@ -136,7 +138,7 @@ h2 {
   flex-wrap: wrap;
 }
 
-.hero img {
+.hero-imge {
   height: 250px;
   width: 435px;
   object-fit: cover;
@@ -148,6 +150,7 @@ h2 {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .anime-detail {
@@ -157,6 +160,10 @@ h2 {
 .anime-title {
   margin: 0 0 25px;
   font-size: 30px;
+}
+
+.anime-description {
+  font-size: 18px;
 }
 
 .anime-url {
@@ -237,6 +244,7 @@ h2 {
   align-items: center;
   color: white;
   height: 150px;
+  flex-wrap: wrap;
 }
 
 .nakama h3 {
@@ -276,12 +284,13 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer img {
   height: 60px;
   vertical-align: middle;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 .footer p {
@@ -303,18 +312,136 @@ h2 {
   flex-wrap: inherit;
 }
 
-@media screen and (max-width: 1023px) {
+.icon-menu {
+  width: 40px;
+  height:40px;
+  background: black;
+  display: none;
+  border-radius: 50%;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  z-index: 4;
+}
 
+@media screen and (max-width: 1023px) {
+  h1 {
+    z-index: 1;
+  }
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hero-image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .container {
+    padding: 0 1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
 
+  .icon-menu {
+    display: block;
+  }
+  
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .menu ul {
+    display: block;
+    padding: 0;
+  }
+
+  .menu ul li {
+    height: 50px;
+  }
+
+  .menu a {
+    justify-content: center;
+    height: 40px;
+  }
+
+  .anime {
+    display: block;
+  }
+
+  .anime-detail {
+    width: auto;
+  }
+
+  .anime-imgContainer {
+    width: auto;
+  }
+
+  .manga-list {
+    display: block;
+  }
+
+  .manga {
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
 
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    margin: .5em 0;
+  }
+
+  .anime {
+    padding: .8em;
+  }
+
+  .anime-title {
+    font-size: 1.5em;
+    margin-bottom: .6em;
+  }
+
+  .anime p {
+    font-size: 1em;
+    margin: .7em 0;
+  }
+
 }
 
 @media screen and (max-width: 320px) {
-  
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.1em;
+  }
 }
