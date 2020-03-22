@@ -374,6 +374,24 @@ h2 {
     height: auto;
   }
 
+  .menu {
+    background: rgba(255, 0, 0, .8);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+  }
+
+  .menu.is-active {
+    right: 0;
+  }
+
   .menu ul {
     display: block;
     padding: 0;
@@ -381,11 +399,14 @@ h2 {
 
   .menu ul li {
     height: 50px;
+    margin: 0 0 2.5em;
   }
 
   .menu a {
     justify-content: center;
     height: 40px;
+    text-decoration: underline;
+    font-size: 2em;
   }
 
   .anime {
