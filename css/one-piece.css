@@ -215,6 +215,13 @@ h2 {
   object-fit: cover;
 }
 
+.manga-title,
+.manga-volumes,
+.manga-subTitle,
+.manga-description {
+  margin: 0 0 10px;
+}
+
 .manga-details {
   background-color: white;
   margin: 20px;
@@ -248,22 +255,23 @@ h2 {
 }
 
 .nakama h3 {
-  margin: 10px 0;
+  margin: 0 0 10px;
 }
 
 .nakama input {
-  display: block;
-  padding: 10px 0 10px 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px 25px 10px 30px;
   background-image: url("../img/envelope.svg");
   background-repeat: no-repeat;
   background-size: 20px;
   background-position-x: 5px;
-  background-position-y: 10px;
-  border-radius: 5px;
+  background-position-y: 8px;
 }
 
 .nakama button {
-  margin: 10px 0;
+  display: block;
+  margin: 10px 0 0;
   background-color: transparent;
   color: white;
   padding: 10px 30px;
@@ -428,6 +436,10 @@ h2 {
   .manga {
     width: auto;
   }
+
+  .manga-details {
+    padding: 1em;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -452,6 +464,32 @@ h2 {
   .anime p {
     font-size: 1em;
     margin: .7em 0;
+  }
+
+  .manga-details {
+    padding: .8em;
+    margin: -2em 1em 1em;
+  }
+
+  .nakama {
+    height: auto;
+    padding: 1em;
+  }
+
+  .nakama form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .social {
+    margin: 10px auto 0;
+  }
+
+  .social-link {
+    font-size: 48px;
+    margin: 0 7px;
   }
 
 }
