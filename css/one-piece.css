@@ -58,7 +58,7 @@ h6 {
 
 h1 {
   color: white;
-  font-size: 29px;
+  font-size: 27px;
   line-height: 1.5;
   letter-spacing: -0.3px;
   margin: 0;
@@ -135,10 +135,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.hero-imge {
+.hero-image {
   height: 250px;
   width: 435px;
   object-fit: cover;
@@ -445,11 +444,19 @@ h2 {
 @media screen and (max-width: 480px) {
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 
   h2 {
     margin: .5em 0;
+  }
+  
+  .header-left {
+    justify-content: left;
+  }
+
+  .header .logo {
+    height: 80px;
   }
 
   .anime {
@@ -501,6 +508,15 @@ h2 {
   }
 
   h1 {
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+
+  .header .logo {
+    height: 70px;
+    margin: 0 1em 0 0;
+  }
+
+  .header-left span {
+    font-size: 1em;
   }
 }
