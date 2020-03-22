@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/one-piece.css" />
   </head>
   <body>
-    <i class="icon-menu"></i>
+    <i class="icon-menu" id="burger-button"></i>
     <header id="header" class="header">
       <div class="container">
         <div class="header-left">
@@ -83,9 +83,9 @@
       </div>
     </section>
     <div class="container">
-      <h2 class="mangaTitle">Manga</h2>
+      <h2 id="manga" class="mangaTitle">Manga</h2>
     </div>
-    <section id="manga" class="manga-list">
+    <section class="manga-list">
       <div class="container">
         <article class="manga">
           <figure>
@@ -195,5 +195,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      const menu = document.querySelector(".menu");
+      const burgerButton = document.querySelector("#burger-button");
+      burgerButton.addEventListener("click", menuBurger);
+      
+      function menuBurger() {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+        }
+      }
+    </script>
   </body>
 </html>
